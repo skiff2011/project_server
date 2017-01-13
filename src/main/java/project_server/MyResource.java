@@ -123,12 +123,12 @@ public class MyResource {
         List<Group> list = worker.getGroups();
         worker.closeConnection();
         if (list != null) {
-            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            Gson gson = new GsonBuilder().setDateFormat(datePattern).create();
             String groupsJSON = gson.toJson(list);
-            List<Group> groupList=gson.fromJson(groupsJSON, new TypeToken<List<Group>>(){}.getType());
+            /*List<Group> groupList=gson.fromJson(groupsJSON, new TypeToken<List<Group>>(){}.getType());
             for (Group group:groupList) {
                 System.out.println(dateFormat.format(group.getCreateDate()));
-            }
+            }*/
             return Response.status(200).entity(groupsJSON).build();
         }
         return Response.status(404).build();

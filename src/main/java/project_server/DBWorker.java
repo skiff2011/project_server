@@ -83,7 +83,7 @@ public class DBWorker {
                 group.setId(set.getInt("idgroup"));
                 group.setGroupCode(set.getString("group_code"));
                 group.setCreateDate(set.getDate("group_create_date"));
-                group.setSpecialityName("speciality_name");
+                group.setSpecialityName(set.getString("speciality_name"));
                 groups.add(group);
             }
         } catch (SQLException e) {
