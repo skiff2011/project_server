@@ -22,7 +22,7 @@ import java.util.List;
  */
 @Path("database")
 public class MyResource {
-    static String datePattern = "dd-MM-YYYY";
+    static String datePattern = "dd-MM-yyyy";
     static SimpleDateFormat dateFormat=new SimpleDateFormat(datePattern);
     @GET
     @Path("/cafedras/getall")
@@ -320,7 +320,7 @@ public class MyResource {
         List<Violation> list = worker.getViolation();
         worker.closeConnection();
         if (list != null) {
-            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            Gson gson = new GsonBuilder().setDateFormat(datePattern).create();
             String groupsJSON = gson.toJson(list);
             return Response.status(200).entity(groupsJSON).build();
         }
@@ -384,6 +384,21 @@ public class MyResource {
     public Response getPunishKind() {
         DBWorker worker = new DBWorker();
         List<PunishKind> list = worker.getPunishKind();
+        worker.closeConnection();
+        if (list != null) {
+            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            String groupsJSON = gson.toJson(list);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/persons/getall")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response getPersons() {
+        DBWorker worker = new DBWorker();
+        List<Person> list = worker.getPersons();
         worker.closeConnection();
         if (list != null) {
             Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();

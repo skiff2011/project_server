@@ -216,6 +216,26 @@ public class DBWorker {
         return punishKinds;
     }
 
+    public List<Person> getPersons(){
+        List<Person> personList=new ArrayList<>();
+        try {
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("SELECT * FROM project_db.person");
+            while (set.next()){
+                Person person=new Person();
+                person.setId(set.getInt("idperson"));
+                person.setSurname(set.getString("surname"));
+                person.setName(set.getString("name"));
+                person.setPatronymic(set.getString("patronymic"));
+                personList.add(person);
+            }
+            return personList;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
     public List<Student> getStudents(){
         List<Student> students=new ArrayList<>();
         try {
