@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e199466-3bd8-4645-9371-522fd2dd46f6" name="Default" comment="add get,post,delete for groups table and get for students">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/MarkKind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Contract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project_server/DBWorker.class" afterPath="$PROJECT_DIR$/target/classes/project_server/DBWorker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project_server/MyResource.class" afterPath="$PROJECT_DIR$/target/classes/project_server/MyResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/DBWorker.class" afterPath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/DBWorker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/MyResource.class" afterPath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/MyResource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" afterPath="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" />
@@ -32,11 +38,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+            <state relative-caret-position="389">
+              <caret line="493" column="67" lean-forward="false" selection-start-line="493" selection-start-column="67" selection-end-line="493" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,145 +50,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="194" column="1" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="194" selection-end-column="1" />
-              <folding>
-                <element signature="e#4549#4550#0" expanded="true" />
-                <element signature="e#4579#4580#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Violation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Violation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="e#771#772#0" expanded="false" />
-                <element signature="e#799#800#0" expanded="false" />
-                <element signature="e#833#834#0" expanded="false" />
-                <element signature="e#863#864#0" expanded="false" />
-                <element signature="e#909#910#0" expanded="false" />
-                <element signature="e#947#948#0" expanded="false" />
-                <element signature="e#978#979#0" expanded="false" />
-                <element signature="e#1005#1006#0" expanded="false" />
-                <element signature="e#1045#1046#0" expanded="false" />
-                <element signature="e#1077#1078#0" expanded="false" />
-                <element signature="e#1114#1115#0" expanded="false" />
-                <element signature="e#1147#1148#0" expanded="false" />
-                <element signature="e#1199#1200#0" expanded="false" />
-                <element signature="e#1243#1244#0" expanded="false" />
-                <element signature="e#1283#1284#0" expanded="false" />
-                <element signature="e#1319#1320#0" expanded="false" />
-                <element signature="e#1377#1378#0" expanded="false" />
-                <element signature="e#1427#1428#0" expanded="false" />
-                <element signature="e#1460#1461#0" expanded="false" />
-                <element signature="e#1489#1490#0" expanded="false" />
-                <element signature="e#1533#1534#0" expanded="false" />
-                <element signature="e#1569#1570#0" expanded="false" />
-                <element signature="e#1598#1599#0" expanded="false" />
-                <element signature="e#1625#1626#0" expanded="false" />
-                <element signature="e#1663#1664#0" expanded="false" />
-                <element signature="e#1695#1696#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DBWorker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6366">
-              <caret line="105" column="69" lean-forward="false" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+            <state relative-caret-position="278">
+              <caret line="391" column="62" lean-forward="false" selection-start-line="391" selection-start-column="62" selection-end-line="391" selection-end-column="62" />
               <folding>
-                <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-                <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-                <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-                <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-                <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-                <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-                <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-                <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-                <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-                <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-                <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-                <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-                <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-                <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-                <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-                <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-                <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-                <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-                <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-                <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-                <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-                <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-                <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-                <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-                <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-                <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-                <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-                <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-                <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-                <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-                <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-                <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-                <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-                <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-                <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-                <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-                <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-                <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-                <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+                <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+                <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+                <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+                <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+                <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+                <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+                <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+                <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+                <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+                <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+                <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+                <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+                <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+                <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+                <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+                <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+                <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+                <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+                <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+                <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+                <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+                <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+                <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+                <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+                <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+                <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+                <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+                <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+                <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+                <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+                <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+                <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+                <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+                <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+                <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+                <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+                <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+                <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+                <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkKind.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MarkKind.java">
+      <file leaf-file-name="Query4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="108">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
               <folding>
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Mark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="21" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="56" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -220,6 +151,11 @@
         <option value="$PROJECT_DIR$/src/main/java/project_server/PunishKind.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/MarkKind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/Contract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/Query1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/Query2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/Query3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/Query4.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/MyResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" />
       </list>
@@ -906,12 +842,13 @@
       <workItem from="1484344840951" duration="146000" />
       <workItem from="1484352913266" duration="3669000" />
       <workItem from="1484360860969" duration="636000" />
-      <workItem from="1484469275813" duration="5033000" />
+      <workItem from="1484469275813" duration="5271000" />
+      <workItem from="1484485307952" duration="4685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54557000" />
+    <option name="totallyTimeSpent" value="59480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -971,54 +908,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3859">
-          <caret line="229" column="39" lean-forward="false" selection-start-line="229" selection-start-column="39" selection-end-line="229" selection-end-column="39" />
-          <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -1050,119 +939,50 @@
         <state relative-caret-position="1411">
           <caret line="85" column="70" lean-forward="false" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="21" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="85" column="70" lean-forward="false" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
-          <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1198,45 +1018,50 @@
         <state relative-caret-position="493">
           <caret line="31" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1264,45 +1089,50 @@
         <state relative-caret-position="3536">
           <caret line="208" column="66" lean-forward="false" selection-start-line="208" selection-start-column="66" selection-end-line="208" selection-end-column="66" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1345,45 +1175,50 @@
         <state relative-caret-position="2159">
           <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1392,10 +1227,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
-          <folding>
-            <element signature="e#4549#4550#0" expanded="true" />
-            <element signature="e#4579#4580#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,45 +1269,50 @@
         <state relative-caret-position="2159">
           <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1484,10 +1321,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
-          <folding>
-            <element signature="e#4549#4550#0" expanded="true" />
-            <element signature="e#4579#4580#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,45 +1354,50 @@
         <state relative-caret-position="1666">
           <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1606,45 +1445,50 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1689,50 +1533,6 @@
             <element signature="e#1019#1020#0" expanded="false" />
             <element signature="e#1069#1070#0" expanded="false" />
             <element signature="e#1113#1114#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-709">
-          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1025#1026#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1104#1105#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-            <element signature="e#1267#1268#0" expanded="false" />
-            <element signature="e#1297#1298#0" expanded="false" />
-            <element signature="e#1343#1344#0" expanded="false" />
-            <element signature="e#1381#1382#0" expanded="false" />
-            <element signature="e#1412#1413#0" expanded="false" />
-            <element signature="e#1439#1440#0" expanded="false" />
-            <element signature="e#1479#1480#0" expanded="false" />
-            <element signature="e#1511#1512#0" expanded="false" />
-            <element signature="e#1548#1549#0" expanded="false" />
-            <element signature="e#1581#1582#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1677#1678#0" expanded="false" />
-            <element signature="e#1713#1714#0" expanded="false" />
-            <element signature="e#1745#1746#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-            <element signature="e#1837#1838#0" expanded="false" />
-            <element signature="e#1873#1874#0" expanded="false" />
-            <element signature="e#1907#1908#0" expanded="false" />
-            <element signature="e#1959#1960#0" expanded="false" />
-            <element signature="e#2005#2006#0" expanded="false" />
-            <element signature="e#2042#2043#0" expanded="false" />
-            <element signature="e#2075#2076#0" expanded="false" />
-            <element signature="e#2127#2128#0" expanded="false" />
-            <element signature="e#2171#2172#0" expanded="false" />
-            <element signature="e#2208#2209#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-            <element signature="e#2293#2294#0" expanded="false" />
-            <element signature="e#2337#2338#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1785,49 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Violation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#799#800#0" expanded="false" />
-            <element signature="e#833#834#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1005#1006#0" expanded="false" />
-            <element signature="e#1045#1046#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1114#1115#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1199#1200#0" expanded="false" />
-            <element signature="e#1243#1244#0" expanded="false" />
-            <element signature="e#1283#1284#0" expanded="false" />
-            <element signature="e#1319#1320#0" expanded="false" />
-            <element signature="e#1377#1378#0" expanded="false" />
-            <element signature="e#1427#1428#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1489#1490#0" expanded="false" />
-            <element signature="e#1533#1534#0" expanded="false" />
-            <element signature="e#1569#1570#0" expanded="false" />
-            <element signature="e#1598#1599#0" expanded="false" />
-            <element signature="e#1625#1626#0" expanded="false" />
-            <element signature="e#1663#1664#0" expanded="false" />
-            <element signature="e#1695#1696#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1839,14 +1596,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#946#947#0" expanded="false" />
+            <element signature="e#978#979#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="194" column="1" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="194" selection-end-column="1" />
+          <caret line="194" column="1" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="194" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Violation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
-            <element signature="e#4549#4550#0" expanded="true" />
-            <element signature="e#4579#4580#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MarkKind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1858,71 +1682,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MarkKind.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="389">
+          <caret line="493" column="67" lean-forward="false" selection-start-line="493" selection-start-column="67" selection-end-line="493" selection-end-column="67" />
           <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="83" column="1" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6366">
-          <caret line="105" column="69" lean-forward="false" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+        <state relative-caret-position="278">
+          <caret line="391" column="62" lean-forward="false" selection-start-line="391" selection-start-column="62" selection-end-line="391" selection-end-column="62" />
           <folding>
-            <marker date="1484479434551" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
-            <marker date="1484479434551" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
-            <marker date="1484479434551" expanded="true" signature="2829:3049" ph="select group... groups" />
-            <marker date="1484479434551" expanded="true" signature="3742:4430" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="5292:5937" ph="select payme... payment" />
-            <marker date="1484479434551" expanded="true" signature="6990:7507" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="8512:8552" ph="select viola... violation" />
-            <marker date="1484479434551" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
-            <marker date="1484479434551" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
-            <marker date="1484479434551" expanded="true" signature="10706:10736" ph="SELECT * FRO... smark" />
-            <marker date="1484479434551" expanded="true" signature="11361:12127" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11361:12136" ph="select idstu... *" />
-            <marker date="1484479434551" expanded="true" signature="11607:11902" ph="select * fro... *" />
-            <marker date="1484479434551" expanded="true" signature="11622:11692" ph="select * fro... student" />
-            <marker date="1484479434551" expanded="true" signature="11737:11839" ph="select * fro... contract" />
-            <marker date="1484479434551" expanded="true" signature="11946:12026" ph="select * fro... student_group" />
-            <marker date="1484479434551" expanded="true" signature="13535:13596" ph="INSERT INTO cafedra... " />
-            <marker date="1484479434551" expanded="true" signature="13980:14063" ph="INSERT INTO speciality... " />
-            <marker date="1484479434551" expanded="true" signature="14496:14573" ph="INSERT INTO groups... " />
-            <marker date="1484479434551" expanded="true" signature="15008:15047" ph="INSERT INTO student_marks... " />
-            <marker date="1484479434551" expanded="true" signature="15505:15598" ph="INSERT INTO payment... " />
-            <marker date="1484479434551" expanded="true" signature="16130:16234" ph="INSERT INTO violation... " />
-            <marker date="1484479434551" expanded="true" signature="16796:16922" ph="INSERT INTO person... " />
-            <marker date="1484479434551" expanded="true" signature="17550:17595" ph="select max(p... person" />
-            <marker date="1484479434551" expanded="true" signature="17714:17777" ph="INSERT INTO student... " />
-            <marker date="1484479434551" expanded="true" signature="18062:18110" ph="select max(s... student" />
-            <marker date="1484479434551" expanded="true" signature="18284:18399" ph="insert into contract... " />
-            <marker date="1484479434551" expanded="true" signature="18791:18870" ph="INSERT INTO student_group... " />
-            <marker date="1484479434551" expanded="true" signature="19424:19461" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="19770:19813" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20117:20151" ph="DELETE FROM " />
-            <marker date="1484479434551" expanded="true" signature="20476:20534" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="20898:20935" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21259:21300" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="21667:21881" ph="select stude... student" />
-            <marker date="1484479434551" expanded="true" signature="22186:22225" ph="delete FROM " />
-            <marker date="1484479434551" expanded="true" signature="22383:22427" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22570:22607" ph="delete from " />
-            <marker date="1484479434551" expanded="true" signature="22750:22785" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
+            <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
+            <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
+            <marker date="1484492150075" expanded="true" signature="3742:4430" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="5292:5937" ph="select payme... payment" />
+            <marker date="1484492150075" expanded="true" signature="6990:7507" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="8512:8552" ph="select viola... violation" />
+            <marker date="1484492150075" expanded="true" signature="9239:9276" ph="SELECT * FRO... spunish_kind" />
+            <marker date="1484492150075" expanded="true" signature="9929:9960" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="10709:11175" ph="SELECT * FRO... person" />
+            <marker date="1484492150075" expanded="true" signature="12105:12135" ph="SELECT * FRO... smark" />
+            <marker date="1484492150075" expanded="true" signature="12757:13433" ph="SELECT stude... person" />
+            <marker date="1484492150075" expanded="true" signature="14479:15107" ph="select stude... person" />
+            <marker date="1484492150075" expanded="true" signature="16087:16889" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="17972:18728" ph="select stude... payment" />
+            <marker date="1484492150075" expanded="true" signature="19820:20586" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="19820:20595" ph="select idstu... *" />
+            <marker date="1484492150075" expanded="true" signature="20066:20361" ph="select * fro... *" />
+            <marker date="1484492150075" expanded="true" signature="20081:20151" ph="select * fro... student" />
+            <marker date="1484492150075" expanded="true" signature="20196:20298" ph="select * fro... contract" />
+            <marker date="1484492150075" expanded="true" signature="20405:20485" ph="select * fro... student_group" />
+            <marker date="1484492150075" expanded="true" signature="21994:22055" ph="INSERT INTO cafedra... " />
+            <marker date="1484492150075" expanded="true" signature="22439:22522" ph="INSERT INTO speciality... " />
+            <marker date="1484492150075" expanded="true" signature="22955:23032" ph="INSERT INTO groups... " />
+            <marker date="1484492150075" expanded="true" signature="23467:23506" ph="INSERT INTO student_marks... " />
+            <marker date="1484492150075" expanded="true" signature="23964:24057" ph="INSERT INTO payment... " />
+            <marker date="1484492150075" expanded="true" signature="24589:24693" ph="INSERT INTO violation... " />
+            <marker date="1484492150075" expanded="true" signature="25255:25381" ph="INSERT INTO person... " />
+            <marker date="1484492150075" expanded="true" signature="26009:26054" ph="select max(p... person" />
+            <marker date="1484492150075" expanded="true" signature="26173:26236" ph="INSERT INTO student... " />
+            <marker date="1484492150075" expanded="true" signature="26521:26569" ph="select max(s... student" />
+            <marker date="1484492150075" expanded="true" signature="26743:26858" ph="insert into contract... " />
+            <marker date="1484492150075" expanded="true" signature="27250:27329" ph="INSERT INTO student_group... " />
+            <marker date="1484492150075" expanded="true" signature="27883:27920" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28229:28272" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28576:28610" ph="DELETE FROM " />
+            <marker date="1484492150075" expanded="true" signature="28935:28993" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29357:29394" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="29718:29759" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="30126:30340" ph="select stude... student" />
+            <marker date="1484492150075" expanded="true" signature="30645:30684" ph="delete FROM " />
+            <marker date="1484492150075" expanded="true" signature="30842:30886" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31029:31066" ph="delete from " />
+            <marker date="1484492150075" expanded="true" signature="31209:31244" ph="delete from " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>

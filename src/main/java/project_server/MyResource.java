@@ -269,7 +269,7 @@ public class MyResource {
         List<Payment> list = worker.getPayment();
         worker.closeConnection();
         if (list != null) {
-            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            Gson gson = new GsonBuilder().setDateFormat(datePattern).create();
             String groupsJSON = gson.toJson(list);
             return Response.status(200).entity(groupsJSON).build();
         }
@@ -418,6 +418,81 @@ public class MyResource {
         if (list != null) {
             Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
             String groupsJSON = gson.toJson(list);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/contracts/getall")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response getContracts(){
+        DBWorker worker=new DBWorker();
+        List<Contract> list=worker.getContracts();
+        worker.closeConnection();
+        if (list != null) {
+            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            String groupsJSON = gson.toJson(list);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/query1")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response query1(){
+        DBWorker worker=new DBWorker();
+        List<Query1> query1List=worker.getQuery1();
+        worker.closeConnection();
+        if (query1List != null) {
+            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            String groupsJSON = gson.toJson(query1List);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/query2")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response query2(){
+        DBWorker worker=new DBWorker();
+        List<Query2> query2List=worker.getQuery2();
+        worker.closeConnection();
+        if (query2List != null) {
+            Gson gson = new GsonBuilder().setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+            String groupsJSON = gson.toJson(query2List);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/query3")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response query3(){
+        DBWorker worker=new DBWorker();
+        List<Query3> query3List=worker.getQuery3();
+        worker.closeConnection();
+        if (query3List != null) {
+            Gson gson = new GsonBuilder().setDateFormat(datePattern).create();
+            String groupsJSON = gson.toJson(query3List);
+            return Response.status(200).entity(groupsJSON).build();
+        }
+        return Response.status(404).build();
+    }
+
+    @GET
+    @Path("/query4")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response query4(){
+        DBWorker worker=new DBWorker();
+        List<Query4> query4List=worker.getQuery4();
+        worker.closeConnection();
+        if (query4List != null) {
+            Gson gson = new GsonBuilder().setDateFormat(datePattern).create();
+            String groupsJSON = gson.toJson(query4List);
             return Response.status(200).entity(groupsJSON).build();
         }
         return Response.status(404).build();

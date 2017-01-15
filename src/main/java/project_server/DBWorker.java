@@ -236,6 +236,33 @@ public class DBWorker {
         }
     }
 
+    public List<Contract> getContracts(){
+        List<Contract> contractList=new ArrayList<>();
+        try{
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("SELECT contract.idcontract,contract_no,groups.group_code,person.surname,person.name,person.patronymic\n" +
+                    "FROM contract\n" +
+                    "JOIN student ON student.idstudent=contract.student_id\n" +
+                    "JOIN person ON student.person_id=person.idperson\n" +
+                    "JOIN student_group ON student.idstudent=student_group.student_id\n" +
+                    "JOIN groups ON groups.idgroup=student_group.group_id");
+            while (set.next()){
+                Contract contract=new Contract();
+                contract.setContractId(set.getInt("contract.idcontract"));
+                contract.setContractNo(set.getString("contract_no"));
+                contract.setGroupCode(set.getString("groups.group_code"));
+                contract.setSurname(set.getString("surname"));
+                contract.setName(set.getString("name"));
+                contract.setPatronymic(set.getString("patronymic"));
+                contractList.add(contract);
+            }
+            return contractList;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
     public List<MarkKind> getMarkKinds(){
         List<MarkKind> markList=new ArrayList<>();
         try {
@@ -249,6 +276,131 @@ public class DBWorker {
             }
             return markList;
         }catch (SQLException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Query1> getQuery1(){
+        List<Query1> query1List=new ArrayList<>();
+        try{
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("SELECT student.idstudent,person.surname,person.name,person.patronymic,student.finance_id AS finance_name,groups.group_code,speciality.speciality_name,cafedra.cafedra_name\n" +
+                    "FROM person\n" +
+                    "JOIN student ON student.person_id=person.idperson\n" +
+                    "JOIN student_group ON student.idstudent=student_group.student_id\n" +
+                    "JOIN groups ON groups.idgroup=student_group.group_id\n" +
+                    "JOIN speciality ON groups.speciality_id=speciality.idspeciality\n" +
+                    "JOIN cafedra ON speciality.cafedra_id=cafedra.idcafedra\n" +
+                    "WHERE cafedra_name='tk'");
+            while (set.next()){
+                Query1 query1=new Query1();
+                query1.setStudentId(set.getInt("student.idstudent"));
+                query1.setSurname(set.getString("person.surname"));
+                query1.setName(set.getString("person.name"));
+                query1.setPatronymic(set.getString("person.patronymic"));
+                query1.setFinance("null");
+                query1.setGroup(set.getString("groups.group_code"));
+                query1.setSpeciality(set.getString("speciality.speciality_name"));
+                query1.setCafedra(set.getString("cafedra.cafedra_name"));
+                query1List.add(query1);
+            }
+            return query1List;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Query2> getQuery2(){
+        List<Query2> query2List=new ArrayList<>();
+        try{
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("select student.idstudent,person.surname,person.name,person.patronymic,groups.group_code,student_marks.subject,smark.mark_name\n" +
+                    "from person\n" +
+                    "join student on student.person_id=person.idperson\n" +
+                    "join student_group on student.idstudent=student_group.student_id\n" +
+                    "join groups on groups.idgroup=student_group.group_id\n" +
+                    "join student_marks on student_marks.student_id=student.idstudent\n" +
+                    "join smark on smark.idsmark=student_marks.mark_id\n" +
+                    "where smark.mark_name='5'");
+            while (set.next()){
+                Query2 query2=new Query2();
+                query2.setId(set.getInt("student.idstudent"));
+                query2.setSurname(set.getString("person.surname"));
+                query2.setName(set.getString("person.name"));
+                query2.setPatronymic(set.getString("person.patronymic"));
+                query2.setGroup(set.getString("groups.group_code"));
+                query2.setSubject(set.getString("student_marks.subject"));
+                query2.setMark(set.getString("smark.mark_name"));
+                query2List.add(query2);
+            }
+            return query2List;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Query3> getQuery3(){
+        List<Query3> query3List=new ArrayList<>();
+        try{
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("select student.idstudent,person.surname,person.name,person.patronymic,groups.group_code,\n" +
+                    "contract.contract_no,scontract_kind.contact_kind_name,payment.payment_date\n" +
+                    "from payment\n" +
+                    "join contract on payment.contract_id=contract.idcontract\n" +
+                    "join scontract_kind on scontract_kind.idcontract_kind=contract.idcontract\n" +
+                    "join student on contract.student_id=student.idstudent\n" +
+                    "join person on student.person_id=person.idperson\n" +
+                    "join student_group on student.idstudent=student_group.student_id\n" +
+                    "join groups on groups.idgroup=student_group.group_id\n" +
+                    "where payment_sum=contract.contract_sum");
+            while (set.next()){
+                Query3 query3=new Query3();
+                query3.setId(set.getInt("student.idstudent"));
+                query3.setSurname(set.getString("person.surname"));
+                query3.setName(set.getString("person.name"));
+                query3.setPatronymic(set.getString("person.patronymic"));
+                query3.setGroup(set.getString("groups.group_code"));
+                query3.setContractNo(set.getString("contract.contract_no"));
+                query3.setContractKind(set.getString("scontract_kind.contact_kind_name"));
+                query3.setPaymentDate(set.getDate("payment.payment_date"));
+                query3List.add(query3);
+            }
+            return query3List;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Query4> getQuery4(){
+        List<Query4> query4List=new ArrayList<>();
+        try{
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("select violation.idviolation,person.surname,person.name,person.patronymic,groups.group_code,sviolation_kind.violation_kind_name,spunish_kind.punish_kind_name,violation.violation_date\n" +
+                    "from violation\n" +
+                    "join sviolation_kind on sviolation_kind.idviolation_kind=violation.violation_kind_id\n" +
+                    "join spunish_kind on spunish_kind.idpunish_kind=violation.punish_kind_id\n" +
+                    "join person on violation.person_id=person.idperson\n" +
+                    "join student on student.person_id=person.idperson\n" +
+                    "join student_group on student.idstudent=student_group.student_id\n" +
+                    "join groups on groups.idgroup=student_group.group_id");
+            while (set.next()){
+                Query4 query4=new Query4();
+                query4.setId(set.getInt("violation.idviolation"));
+                query4.setSurname(set.getString("person.surname"));
+                query4.setName(set.getString("person.name"));
+                query4.setPatronymic(set.getString("person.patronymic"));
+                query4.setGroup(set.getString("groups.group_code"));
+                query4.setViolation(set.getString("sviolation_kind.violation_kind_name"));
+                query4.setPunish(set.getString("spunish_kind.punish_kind_name"));
+                query4.setDate(set.getDate("violation.violation_date"));
+                query4List.add(query4);
+            }
+            return query4List;
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
             return null;
         }
