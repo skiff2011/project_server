@@ -497,4 +497,11 @@ public class MyResource {
         }
         return Response.status(404).build();
     }
+
+    @GET
+    @Path("/test")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response test(){
+        return Response.status(200).entity("test").build();
+    }
 }

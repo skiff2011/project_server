@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e199466-3bd8-4645-9371-522fd2dd46f6" name="Default" comment="add get,post,delete for groups table and get for students">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Contract.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/project_server/Query4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project_server/DBWorker.class" afterPath="$PROJECT_DIR$/target/classes/project_server/DBWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project_server/MyResource.class" afterPath="$PROJECT_DIR$/target/classes/project_server/MyResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/DBWorker.class" afterPath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/DBWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/MyResource.class" afterPath="$PROJECT_DIR$/target/project_server/WEB-INF/classes/project_server/MyResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" afterPath="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/project_server/MyResource.java" afterPath="$PROJECT_DIR$/src/main/java/project_server/MyResource.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,13 +29,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="493" column="67" lean-forward="false" selection-start-line="493" selection-start-column="67" selection-end-line="493" selection-end-column="67" />
+            <state relative-caret-position="449">
+              <caret line="504" column="59" lean-forward="false" selection-start-line="504" selection-start-column="59" selection-end-line="504" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#18824#18825#0" expanded="true" />
+                <element signature="e#18890#18891#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,9 +46,10 @@
       <file leaf-file-name="DBWorker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="6613">
               <caret line="391" column="62" lean-forward="false" selection-start-line="391" selection-start-column="62" selection-end-line="391" selection-end-column="62" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
                 <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
                 <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -105,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query4.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Query4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="e#377#378#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
@@ -156,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/java/project_server/Query2.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/Query3.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/Query4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project_server/MyResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/project_server/DBWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project_server/MyResource.java" />
       </list>
     </option>
   </component>
@@ -202,6 +196,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,8 +287,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,6 +296,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -843,12 +840,13 @@
       <workItem from="1484352913266" duration="3669000" />
       <workItem from="1484360860969" duration="636000" />
       <workItem from="1484469275813" duration="5271000" />
-      <workItem from="1484485307952" duration="4685000" />
+      <workItem from="1484485307952" duration="5891000" />
+      <workItem from="1484518958087" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59480000" />
+    <option name="totallyTimeSpent" value="61213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -874,9 +872,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27725437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26527777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26934096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -922,6 +920,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -939,6 +939,7 @@
         <state relative-caret-position="1411">
           <caret line="85" column="70" lean-forward="false" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1001,6 +1002,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,6 +1021,7 @@
         <state relative-caret-position="493">
           <caret line="31" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1080,6 +1084,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1089,6 +1095,7 @@
         <state relative-caret-position="3536">
           <caret line="208" column="66" lean-forward="false" selection-start-line="208" selection-start-column="66" selection-end-line="208" selection-end-column="66" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1143,6 +1150,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1175,6 +1184,7 @@
         <state relative-caret-position="2159">
           <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1237,6 +1247,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1269,6 +1281,7 @@
         <state relative-caret-position="2159">
           <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1345,6 +1358,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1354,6 +1369,7 @@
         <state relative-caret-position="1666">
           <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1436,6 +1452,8 @@
           <caret line="97" column="48" lean-forward="true" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1445,6 +1463,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1612,30 +1631,30 @@
         <state relative-caret-position="312">
           <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
+            <element signature="e#491#492#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#688#689#0" expanded="false" />
+            <element signature="e#738#739#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+            <element signature="e#814#815#0" expanded="false" />
+            <element signature="e#844#845#0" expanded="false" />
+            <element signature="e#890#891#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+            <element signature="e#959#960#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#1058#1059#0" expanded="false" />
+            <element signature="e#1095#1096#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1682,23 +1701,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="493" column="67" lean-forward="false" selection-start-line="493" selection-start-column="67" selection-end-line="493" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="81" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
           <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1721,9 +1730,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/DBWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="6613">
           <caret line="391" column="62" lean-forward="false" selection-start-line="391" selection-start-column="62" selection-end-line="391" selection-end-column="62" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1484492150075" expanded="true" signature="1148:1169" ph="SELECT * FRO... cafedra" />
             <marker date="1484492150075" expanded="true" signature="1832:2088" ph="SELECT speci... speciality" />
             <marker date="1484492150075" expanded="true" signature="2829:3049" ph="select group... groups" />
@@ -1774,8 +1784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project_server/Query4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="e#377#378#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
@@ -1783,12 +1793,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project_server/MyResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="504" column="59" lean-forward="false" selection-start-line="504" selection-start-column="59" selection-end-line="504" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#18824#18825#0" expanded="true" />
+            <element signature="e#18890#18891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>project_server:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>project_server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.gson:gson:2.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
