@@ -103,7 +103,7 @@ public class DBWorker {
                     "join smark on smark.idsmark=student_marks.mark_id\n" +
                     "join student_group on student_group.student_id=student.idstudent\n" +
                     "join groups on groups.idgroup=student_group.group_id\n" +
-                    "order by groups.group_code asc,student_marks.subject asc");
+                    "order by student_marks.subject,groups.group_code asc,student_marks.subject asc");
             while (set.next()){
                 Mark mark=new Mark();
                 mark.setStudentId(set.getInt("student_id"));
@@ -231,6 +231,24 @@ public class DBWorker {
             }
             return personList;
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public List<MarkKind> getMarkKinds(){
+        List<MarkKind> markList=new ArrayList<>();
+        try {
+            Statement statement=connection.createStatement();
+            ResultSet set=statement.executeQuery("SELECT * FROM project_db.smark");
+            while (set.next()){
+                MarkKind markKind=new MarkKind();
+                markKind.setId(set.getInt("idsmark"));
+                markKind.setName(set.getString("mark_name"));
+                markList.add(markKind);
+            }
+            return markList;
+        }catch (SQLException e){
             System.out.println(e.getMessage());
             return null;
         }
